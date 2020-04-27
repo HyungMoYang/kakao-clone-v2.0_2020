@@ -1,0 +1,38 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0; /* fixed 범위에서 bottom margin을 0으로 설정함으로써 web 바닥에 붙게 할 수 있다. 만약, 위에 붙이고 싶으면 top을 설정하면 될 것.*/
+  padding: 20px 50px; /*상하/좌우 padding setup*/
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+/* badge를 추가하자*/
+/* position: relative/absolute 이해, position을 잡은 이후에 top, right등으로 위치 조정 가능 */
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  font-size: 10px;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

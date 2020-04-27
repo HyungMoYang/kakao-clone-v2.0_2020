@@ -44,10 +44,10 @@
 
     <main class="friends">
       <header class="friends__header">
-        <div class="friends__friend friend friend--lg">
-          <div class="friends_column">
+        <div class="friends__friend friend">
+          <div class="friends__column">
             <img class="g-avatar friend__avatar" src="images/avatar.jpg" />
-            <div class="friend_content">
+            <div class="friend__content">
               <span class="friend__name">
                 Nicolas Serrano
               </span>
@@ -63,8 +63,8 @@
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="friends__column">
-            <img class="g-avatar friend__avatar" src="images/avatar.jpg" />
-            <div class="friend_content">
+            <img class="friend__avatar" src="images/avatar.jpg" />
+            <div class="friend__content">
               <span class="friend__name">
                 Plus Friend
               </span>
@@ -75,10 +75,10 @@
 
       <ul class="friends__list">
         <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__friend friend friend--lg">
-          <div class="friends_column">
-            <img class="g-avatar friend__avatar" src="images/avatar.jpg" />
-            <div class="friend_content">
+        <li class="friends__friend friend">
+          <div class="friends__column">
+            <img class="friend__avatar" src="images/avatar.jpg" />
+            <div class="friend__content">
               <span class="friend__name">
                 Nicolas Serrano
               </span>
@@ -89,8 +89,10 @@
           </div>
           <div class="friends__column">
             <div class="friends__now-listening">
-              <span>지독하게-FTISLAND(FT ISLAND)</span>
-              <i class="fas fa-play"></i>
+              <span>
+                FTISLAND(FT Nomadcoders)
+                <i class="fas fa-play"></i>
+              </span>
             </div>
           </div>
         </li>
@@ -100,13 +102,14 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link"
-            ><i class="fas fa-user"></i>
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link"
-            ><i class="far fa-comment"></i>
+            ><div class="nav__badge">8</div>
+            <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
