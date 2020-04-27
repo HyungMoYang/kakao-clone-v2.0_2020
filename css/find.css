@@ -1,0 +1,38 @@
+.find .find__header-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find .header-btn {
+  display: flex; /* 각각의 button content가 flex => 가로 방향으로 나열 */
+  flex-direction: column; /* content의 direction을 세로로 정렬한다. */
+  align-items: center;
+  padding: 0px 10px;
+}
+
+/* 필요 없는거 같은데...?
+.find .header-btn__title {
+  display: block;
+}
+*/
+
+.find .header-btn__icon {
+  font-size: 14px;
+}
+
+.find .header-btn__title {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.find .find__recommended {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.find .find__title {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
