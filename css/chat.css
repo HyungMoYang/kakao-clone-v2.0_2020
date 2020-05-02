@@ -74,12 +74,13 @@
 
 .message {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 50%;
 }
 
 .incoming-message {
   align-self: flex-start;
+  margin-bottom: 13px;
 }
 
 .incoming-message img {
@@ -94,6 +95,7 @@
 
 .sent-message {
   align-self: flex-end;
+  margin-bottom: 13px;
 }
 
 .message .message__bubble {
@@ -102,8 +104,29 @@
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 30px;
+  display: block;
+  color: white;
+  font-weight: 600;
 }
 
+/* sort the timestamp line */
 .message .message__timestamp {
   align-self: flex-end;
+}
+/* message__author의 tag가 <span>이라서 display:block;을 해야 margin-bottom이 먹는다 
+<div>를 쓰면 그냥 margin-bottom을 설정할 수 있는데, 굳이 왜 <span>을 썼는지는 잘 모르겠다..*/
+.incoming-message .message__author {
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.incoming-message .message__bubble {
+  border-top-left-radius: 0px;
+  background-image: linear-gradient(to right, #360033, #0b8793);
+}
+
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #70e1f4, #ffd194);
 }
