@@ -14,6 +14,10 @@
   padding: 0px 20px;
 }
 
+.chats .chats__chat {
+  margin-bottom: 10px;
+}
+
 .chats-body {
   background-image: url(../images/chatBg.png);
   min-height: 120vh; /* viewport란 무엇인가...? / viewport-screen??  */
@@ -147,6 +151,7 @@
 
 .incoming-message img {
   width: 30px;
+  height: 30px;
   border-radius: 15px;
   margin-right: 15px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
