@@ -1,0 +1,33 @@
+.ani-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-top: 100px;
+}
+
+.button {
+  background-color: #7f8c8d;
+  color: white;
+  width: 350px;
+  height: 80px;
+  border-radius: 50px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nico {
+  width: 300px;
+  transition: all 0.7s ease-in-out;
+}
+
+.ani-container:hover .button {
+  opacity: 0.6;
+}
+.ani-container:hover .nico {
+  border: 5px solid black;
+  transform: rotate(0.4turn) scale(0.6);
+}
