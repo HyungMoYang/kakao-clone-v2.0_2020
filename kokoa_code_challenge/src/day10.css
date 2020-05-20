@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700,800&display=swap");
+@import "reset.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 600px;
+  width: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px rgb(134, 134, 134),
+    inset -3px -3px 5px rgba(58, 58, 58, 0.2),
+    inset 3px 3px 20px rgba(29, 29, 29, 0.2);
+}
+
+/* header container */
+.header-contianer {
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.header-text {
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+/* login data container */
+.login-data-container {
+  height: 34%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login {
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #f4f3f4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login::placeholder {
+  opacity: 0.5;
+}
+
+.forgot-pw,
+.remember_me {
+  opacity: 0.8;
+  font-size: 12px;
+}
+.forgot-pw {
+  align-self: flex-end;
+  color: #e2283e;
+  cursor: pointer;
+}
+
+.remember_me {
+  width: 110%;
+  display: flex;
+  align-items: center;
+}
+
+/* button box container */
+.button-box {
+  height: 25%;
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.btn-text {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.signin {
+  width: 100%;
+  background-color: #e2283e;
+}
+
+.sns-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.facebook {
+  width: 46%;
+  background-color: #475a95;
+}
+.twitter {
+  width: 46%;
+  background-color: #5da1f2;
+}
+
+/* etc container */
+.etc-data {
+  height: 24%;
+  width: 80%;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.red-link {
+  color: #e2283e;
+  cursor: pointer;
+}
