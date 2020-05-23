@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 13</title>
+    <!-- Font Awesome 추가 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="src/day13.css" />
+  </head>
+
+  <body>
+    <div class="phone">
+      <div class="screen">
+        <!-- status-bar -->
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <span class="status-bar__time">9:41</span>
+          </div>
+          <div class="status-bar__column">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+
+        <!-- header -->
+        <header class="header">
+          <i class="fas fa-arrow-left"></i>
+          <span class="header__title">Profile</span>
+          <i class="fas fa-bars"></i>
+        </header>
+
+        <!-- main user information -->
+        <main class="user-information">
+          <img
+            class="user__image"
+            src="https://mnews.imaeil.com/inc/photos/2014/04/08/2014040811315350216_m.jpg"
+          />
+          <span class="user__name">Super Galaxy Rumble</span>
+          <span class="user__location">Bandle City</span>
+          <div class="user__button">
+            <a class="button__follow" href="#">Follow</a>
+            <a class="button__message" href="#">Message</a>
+          </div>
+          <ul class="user__follow-infos">
+            <li class="follow-info">
+              <span>140</span>
+              <span>Follows</span>
+            </li>
+            <li class="follow-info">
+              <span>250</span>
+              <span>Following</span>
+            </li>
+            <li class="follow-info">
+              <span>369</span>
+              <span>Images</span>
+            </li>
+          </ul>
+        </main>
+
+        <!-- nav bar -->
+        <nav class="nav-bar">
+          <ul class="nav__list">
+            <li class="nav__icon"><i class="fas fa-user"></i></li>
+            <li class="nav__icon"><i class="fas fa-user-friends"></i></li>
+            <li class="nav__icon"><i class="far fa-comments"></i></li>
+            <li class="nav__icon"><i class="fas fa-cog"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
