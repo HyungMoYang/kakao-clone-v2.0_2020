@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.camera-container {
+  background-color: #039b92;
+  position: relative;
+}
+
+.pop {
+  width: 100%;
+  height: 100%;
+  background-color: #283a48;
+}
+
+.camera-box {
+  position: absolute;
+}
+
+/* pop box  */
+.pop-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.title {
+  color: white;
+  font-size: 28px;
+}
+
+.text {
+  color: #e74f6f;
+  margin-bottom: 25px;
+}
+
+.button {
+  background-color: #e74f6f;
+  color: white;
+  padding: 15px 40px;
+}
+
+.camera-container:hover > .pop-box {
+  transform: translate(20px, 20px);
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* game center */
+.game-center-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.game-center-box {
+  width: 100%;
+  height: 100%;
+  background-color: #f8a4a1;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 2;
+}
+
+.game-center-pop {
+  width: 100%;
+  height: 100%;
+  background-color: #283a48;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: absolute;
+}
+.game-center__text-container {
+  margin-bottom: 30px;
+}
+.game-center-title {
+  color: white;
+  font-size: 28px;
+}
+.game-center-text {
+  color: #e74f6f;
+}
+.game-center__pop__btn {
+  background-color: #e74f6f;
+  color: white;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+}
+.game-center-container:hover > .game-center-box {
+  height: 300px;
+}
+
+.safari-container {
+  position: relative;
+  background-color: #d6f0f9;
+}
+.safari-box {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: #d6f0f9;
+  transition: all 0.5s ease-in-out;
+}
+.safari-pop {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: #283a48;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  z-index: -1;
+}
+.safari__text-conatiner {
+  margin-bottom: 30px;
+}
+.safari-title {
+  color: white;
+  font-size: 28px;
+}
+.safari-text {
+  color: #e74f6f;
+}
+.safari__pop__btn {
+  background-color: #e74f6f;
+  color: white;
+  padding: 15px 24px;
+  margin-bottom: 30px;
+}
+
+.safari-container:hover > .safari-box {
+  transform: scale(0.5);
+  margin-top: -60px;
+}

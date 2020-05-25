@@ -31,7 +31,6 @@
   margin: 0 auto; /* margin auto, left, right로 page 중앙에 맞춤 -> 검색 */
   left: 0;
   right: 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
